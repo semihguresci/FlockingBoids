@@ -1,0 +1,18 @@
+Boid simulation
+
+The provided framework is a simple application which simulates basic flocking behaviour of a bunch of entities (boids).
+The simulation is written in an extremely basic and naive way. 
+The point of the test is for you to improve the boid simulation code to perform better while keeping in mind memory usage.
+
+The parts of the code that are relevant to this test are:
+viewer\src\sG\sg_boidMng.cpp/h
+viewer\src\sG\sg_boid.cpp/h
+viewer\src\sG\sg_gameMng.cpp
+
+the game manager initializes the boid manager, and triggers the simulation steps for the system every frame (_boidMng->stepSimulation();), as well as the settings of the render data for the boids (_boidMng->syncWindowStep();).
+The simulation and render data setting stages are separate, due to the rendering code running on a different thread than the game code.
+
+these defines in sg_gameMng.cpp determine the number of boids:
+#define NUM_SMALL_BOIDS 900
+#define NUM_BIG_BOIDS 4
+

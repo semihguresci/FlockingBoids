@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{34831360-BCDB-11E0-962B-0809500C9A43}</ProjectGuid>
+    <RootNamespace>libsas</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\bin\vs2015\</OutDir>
+    <IntDir>obj\Debug\libsas\</IntDir>
+    <TargetName>libsas_d</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\bin\vs2015\</OutDir>
+    <IntDir>obj\Release\libsas\</IntDir>
+    <TargetName>libsas</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\libsas\inc;..\..\libsas\src;..\..\libsas\src\render\dx11;..\..\libsas\src\platform\win32;..\..\external\libovr-0.4.4\Include;..\..\sasmaths\inc;..\..\sassystem\inc;..\..\sassystem\inc\platform\win32;..\..\sasutils\inc;..\..\sasutils\inc\platform\win32;C:\Program Files (x86)\Windows Kits\8.0\Include\um;C:\Program Files (x86)\Windows Kits\8.0\Include\shared;..\..\external\assimp\include;..\..\external\anttweakbar\include;..\..\external\jansson\inc;..\..\external\devil\inc;..\..\external\nvtt\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;sasEXPORT;PLATFORM_DX11;sasBACKEND="dx11";sasDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>sas_pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)libsas_d.pdb</ProgramDataBaseFileName>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;sasEXPORT;PLATFORM_DX11;sasBACKEND="dx11";sasDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\libsas\inc;..\..\libsas\src;..\..\libsas\src\render\dx11;..\..\libsas\src\platform\win32;..\..\external\libovr-0.4.4\Include;..\..\sasmaths\inc;..\..\sassystem\inc;..\..\sassystem\inc\platform\win32;..\..\sasutils\inc;..\..\sasutils\inc\platform\win32;C:\Program Files (x86)\Windows Kits\8.0\Include\um;C:\Program Files (x86)\Windows Kits\8.0\Include\shared;..\..\external\assimp\include;..\..\external\anttweakbar\include;..\..\external\jansson\inc;..\..\external\devil\inc;..\..\external\nvtt\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)libsas_d.lib</OutputFile>
+    </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\..\libsas\inc;..\..\libsas\src;..\..\libsas\src\render\dx11;..\..\libsas\src\platform\win32;..\..\external\libovr-0.4.4\Include;..\..\sasmaths\inc;..\..\sassystem\inc;..\..\sassystem\inc\platform\win32;..\..\sasutils\inc;..\..\sasutils\inc\platform\win32;C:\Program Files (x86)\Windows Kits\8.0\Include\um;C:\Program Files (x86)\Windows Kits\8.0\Include\shared;..\..\external\assimp\include;..\..\external\anttweakbar\include;..\..\external\jansson\inc;..\..\external\devil\inc;..\..\external\nvtt\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;sasEXPORT;PLATFORM_DX11;sasBACKEND="dx11";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>sas_pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)libsas.pdb</ProgramDataBaseFileName>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;sasEXPORT;PLATFORM_DX11;sasBACKEND="dx11";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\libsas\inc;..\..\libsas\src;..\..\libsas\src\render\dx11;..\..\libsas\src\platform\win32;..\..\external\libovr-0.4.4\Include;..\..\sasmaths\inc;..\..\sassystem\inc;..\..\sassystem\inc\platform\win32;..\..\sasutils\inc;..\..\sasutils\inc\platform\win32;C:\Program Files (x86)\Windows Kits\8.0\Include\um;C:\Program Files (x86)\Windows Kits\8.0\Include\shared;..\..\external\assimp\include;..\..\external\anttweakbar\include;..\..\external\jansson\inc;..\..\external\devil\inc;..\..\external\nvtt\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)libsas.lib</OutputFile>
+    </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libsas\inc\sas_export.h" />
+    <ClInclude Include="..\..\libsas\inc\sas_main.h" />
+    <ClInclude Include="..\..\libsas\src\sas_core.h" />
+    <ClInclude Include="..\..\libsas\src\sas_pch.h" />
+    <ClInclude Include="..\..\libsas\src\animation\sas_animation.h" />
+    <ClInclude Include="..\..\libsas\src\animation\sas_skeleton.h" />
+    <ClInclude Include="..\..\libsas\src\editor\sas_editor.h" />
+    <ClInclude Include="..\..\libsas\src\platform\posix\sas_cmp.h" />
+    <ClInclude Include="..\..\libsas\src\platform\win32\sas_cmp.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_constantbuffer.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_depthbuffer.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_geometry.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_gputimer.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_indexbuffer.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_indirectargsbuffer.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_instance.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_material.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_mesh.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_miscresources.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_renderlist.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_rendermng.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_rendertarget.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_rendertargetpool.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_rendertypes.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_settings.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_stats.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_stereo.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_structuredbuffer.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_texture.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_vertexbuffer.h" />
+    <ClInclude Include="..\..\libsas\src\render\sas_vertexformat.h" />
+    <ClInclude Include="..\..\libsas\src\render\compositePass\sas_compositePass.h" />
+    <ClInclude Include="..\..\libsas\src\render\debug\sas_debugmng.h" />
+    <ClInclude Include="..\..\libsas\src\render\debug\sas_debugrender.h" />
+    <ClInclude Include="..\..\libsas\src\render\debug\sas_debugutilities.h" />
+    <ClInclude Include="..\..\libsas\src\render\dx11\sas_device.h" />
+    <ClInclude Include="..\..\libsas\src\render\dx11\sas_device_buffer.h" />
+    <ClInclude Include="..\..\libsas\src\render\dx11\sas_device_common.h" />
+    <ClInclude Include="..\..\libsas\src\render\dx11\sas_device_depthbuffer.h" />
+    <ClInclude Include="..\..\libsas\src\render\dx11\sas_device_factory.h" />
+    <ClInclude Include="..\..\libsas\src\render\dx11\sas_device_gputimer.h" />
+    <ClInclude Include="..\..\libsas\src\render\dx11\sas_device_inputlayoutcache.h" />
+    <ClInclude Include="..\..\libsas\src\render\dx11\sas_device_object.h" />
+    <ClInclude Include="..\..\libsas\src\render\dx11\sas_device_rendertarget.h" />
+    <ClInclude Include="..\..\libsas\src\render\dx11\sas_device_shader.h" />
+    <ClInclude Include="..\..\libsas\src\render\dx11\sas_device_statebuffercache.h" />
+    <ClInclude Include="..\..\libsas\src\render\dx11\sas_device_texture.h" />
+    <ClInclude Include="..\..\libsas\src\render\dx11\sas_device_typeconversion.h" />
+    <ClInclude Include="..\..\libsas\src\render\gui\sas_gui.h" />
+    <ClInclude Include="..\..\libsas\src\render\lights\sas_light.h" />
+    <ClInclude Include="..\..\libsas\src\render\lights\sas_lightmng.h" />
+    <ClInclude Include="..\..\libsas\src\render\lights\sas_lightpass.h" />
+    <ClInclude Include="..\..\libsas\src\render\lights\sas_lightpass_cs.h" />
+    <ClInclude Include="..\..\libsas\src\render\lights\sas_lightpass_ps.h" />
+    <ClInclude Include="..\..\libsas\src\render\lights\sas_volumetricLight.h" />
+    <ClInclude Include="..\..\libsas\src\render\motionBlur\sas_motionBlur.h" />
+    <ClInclude Include="..\..\libsas\src\render\postAA\sas_postaa.h" />
+    <ClInclude Include="..\..\libsas\src\render\profiling\sas_cpuprofiler.h" />
+    <ClInclude Include="..\..\libsas\src\render\profiling\sas_gpuprofiler.h" />
+    <ClInclude Include="..\..\libsas\src\render\shaders\sas_shaderfamily.h" />
+    <ClInclude Include="..\..\libsas\src\render\shaders\sas_shaderflags.h" />
+    <ClInclude Include="..\..\libsas\src\render\shaders\sas_shaderids.h" />
+    <ClInclude Include="..\..\libsas\src\render\shaders\sas_shadermng.h" />
+    <ClInclude Include="..\..\libsas\src\render\shadows\sas_shadowmng.h" />
+    <ClInclude Include="..\..\libsas\src\render\shadows\sas_spotshadowpool.h" />
+    <ClInclude Include="..\..\libsas\src\render\Visibility\sas_drawlist.h" />
+    <ClInclude Include="..\..\libsas\src\render\Visibility\sas_visibility.h" />
+    <ClInclude Include="..\..\libsas\src\resource\sas_assimp_loader.h" />
+    <ClInclude Include="..\..\libsas\src\resource\sas_camerapath.h" />
+    <ClInclude Include="..\..\libsas\src\resource\sas_modelinstance.h" />
+    <ClInclude Include="..\..\libsas\src\resource\sas_model_loader.h" />
+    <ClInclude Include="..\..\libsas\src\resource\sas_model_resource.h" />
+    <ClInclude Include="..\..\libsas\src\resource\sas_resource.h" />
+    <ClInclude Include="..\..\libsas\src\resource\sas_resourceloader.h" />
+    <ClInclude Include="..\..\libsas\src\resource\sas_resourcemng.h" />
+    <ClInclude Include="..\..\libsas\src\resource\sas_splashscreen.h" />
+    <ClInclude Include="..\..\libsas\src\resource\sas_texture_loader.h" />
+    <ClInclude Include="..\..\libsas\src\resource\sas_texture_resource.h" />
+    <ClInclude Include="..\..\libsas\src\utils\sas_cameramng.h" />
+    <ClInclude Include="..\..\libsas\src\utils\sas_pix.h" />
+    <ClInclude Include="..\..\rsc\shaders\Fxaa3_11.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\libsas\src\sas_core.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\sas_core.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\sas_main.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\sas_main.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\sas_pch.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\sas_pch.obj</ObjectFileName>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\animation\sas_animation.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\animation\sas_animation.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\animation\sas_skeleton.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\animation\sas_skeleton.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\editor\sas_editor.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\editor\sas_editor.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\platform\posix\sas_cmp.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\platform\posix\sas_cmp.obj</ObjectFileName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\platform\win32\sas_cmp.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\platform\win32\sas_cmp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\sas_constantbuffer.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\sas_constantbuffer.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\sas_depthbuffer.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\sas_depthbuffer.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\sas_geometry.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\sas_geometry.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\sas_gputimer.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\sas_gputimer.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\sas_indexbuffer.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\sas_indexbuffer.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\sas_indirectargsbuffer.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\sas_indirectargsbuffer.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\sas_instance.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\sas_instance.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\sas_material.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\sas_material.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\sas_mesh.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\sas_mesh.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\sas_miscresources.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\sas_miscresources.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\sas_renderlist.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\sas_renderlist.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\sas_rendermng.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\sas_rendermng.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\sas_rendertarget.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\sas_rendertarget.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\sas_rendertargetpool.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\sas_rendertargetpool.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\sas_settings.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\sas_settings.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\sas_stats.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\sas_stats.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\sas_stereo.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\sas_stereo.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\sas_structuredbuffer.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\sas_structuredbuffer.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\sas_texture.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\sas_texture.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\sas_vertexbuffer.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\sas_vertexbuffer.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\sas_vertexformat.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\sas_vertexformat.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\compositePass\sas_compositePass.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\compositePass\sas_compositePass.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\debug\sas_debugmng.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\debug\sas_debugmng.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\debug\sas_debugrender.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\debug\sas_debugrender.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\debug\sas_debugutilities.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\debug\sas_debugutilities.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\dx11\sas_device.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\dx11\sas_device.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\dx11\sas_device_buffer.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\dx11\sas_device_buffer.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\dx11\sas_device_depthbuffer.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\dx11\sas_device_depthbuffer.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\dx11\sas_device_factory.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\dx11\sas_device_factory.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\dx11\sas_device_gputimer.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\dx11\sas_device_gputimer.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\dx11\sas_device_inputlayoutcache.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\dx11\sas_device_inputlayoutcache.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\dx11\sas_device_rendertarget.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\dx11\sas_device_rendertarget.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\dx11\sas_device_shader.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\dx11\sas_device_shader.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\dx11\sas_device_statebuffercache.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\dx11\sas_device_statebuffercache.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\dx11\sas_device_texture.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\dx11\sas_device_texture.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\dx11\sas_device_typeconversion.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\dx11\sas_device_typeconversion.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\gui\sas_gui.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\gui\sas_gui.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\lights\sas_light.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\lights\sas_light.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\lights\sas_lightmng.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\lights\sas_lightmng.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\lights\sas_lightpass.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\lights\sas_lightpass.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\lights\sas_lightpass_cs.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\lights\sas_lightpass_cs.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\lights\sas_lightpass_ps.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\lights\sas_lightpass_ps.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\lights\sas_volumetricLight.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\lights\sas_volumetricLight.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\motionBlur\sas_motionBlur.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\motionBlur\sas_motionBlur.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\postAA\sas_postaa.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\postAA\sas_postaa.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\profiling\sas_cpuprofiler.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\profiling\sas_cpuprofiler.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\profiling\sas_gpuprofiler.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\profiling\sas_gpuprofiler.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\shaders\sas_shaderfamily.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\shaders\sas_shaderfamily.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\shaders\sas_shaderflags.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\shaders\sas_shaderflags.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\shaders\sas_shaderids.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\shaders\sas_shaderids.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\shaders\sas_shadermng.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\shaders\sas_shadermng.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\shadows\sas_shadowmng.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\shadows\sas_shadowmng.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\shadows\sas_spotshadowpool.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\shadows\sas_spotshadowpool.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\render\Visibility\sas_visibility.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\render\Visibility\sas_visibility.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\resource\sas_assimp_loader.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\resource\sas_assimp_loader.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\resource\sas_camerapath.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\resource\sas_camerapath.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\resource\sas_modelinstance.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\resource\sas_modelinstance.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\resource\sas_model_loader.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\resource\sas_model_loader.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\resource\sas_model_resource.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\resource\sas_model_resource.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\resource\sas_resource.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\resource\sas_resource.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\resource\sas_resourcemng.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\resource\sas_resourcemng.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\resource\sas_splashscreen.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\resource\sas_splashscreen.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\resource\sas_texture_loader.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\resource\sas_texture_loader.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\resource\sas_texture_resource.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\resource\sas_texture_resource.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\utils\sas_cameramng.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\utils\sas_cameramng.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\libsas\src\utils\sas_pix.cpp">
+      <ObjectFileName>$(IntDir)libsas\src\utils\sas_pix.obj</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\rsc\shaders\compositePass.fx" />
+    <None Include="..\..\rsc\shaders\compositePass.txt" />
+    <None Include="..\..\rsc\shaders\debugVolTexSlice.fx" />
+    <None Include="..\..\rsc\shaders\debugVolTexSlice.txt" />
+    <None Include="..\..\rsc\shaders\default.fx" />
+    <None Include="..\..\rsc\shaders\default.txt" />
+    <None Include="..\..\rsc\shaders\deferredShadows.fx" />
+    <None Include="..\..\rsc\shaders\deferredShadows.txt" />
+    <None Include="..\..\rsc\shaders\depthDownsample.fx" />
+    <None Include="..\..\rsc\shaders\depthDownsample.txt" />
+    <None Include="..\..\rsc\shaders\destrParticles.fx" />
+    <None Include="..\..\rsc\shaders\destrParticles.txt" />
+    <None Include="..\..\rsc\shaders\fxaa.fx" />
+    <None Include="..\..\rsc\shaders\fxaa.txt" />
+    <None Include="..\..\rsc\shaders\globalConstants.inc" />
+    <None Include="..\..\rsc\shaders\globals.txt" />
+    <None Include="..\..\rsc\shaders\godrays.fx" />
+    <None Include="..\..\rsc\shaders\godrays.txt" />
+    <None Include="..\..\rsc\shaders\lightPass.fx" />
+    <None Include="..\..\rsc\shaders\lightPass.txt" />
+    <None Include="..\..\rsc\shaders\motionBlur.fx" />
+    <None Include="..\..\rsc\shaders\motionBlur.txt" />
+    <None Include="..\..\rsc\shaders\ovrDistortion.fx" />
+    <None Include="..\..\rsc\shaders\ovrDistortion.txt" />
+    <None Include="..\..\rsc\shaders\renderFrustum.fx" />
+    <None Include="..\..\rsc\shaders\renderFrustum.txt" />
+    <None Include="..\..\rsc\shaders\renderLine.fx" />
+    <None Include="..\..\rsc\shaders\renderLine.txt" />
+    <None Include="..\..\rsc\shaders\screenCopy.fx" />
+    <None Include="..\..\rsc\shaders\screenCopy.txt" />
+    <None Include="..\..\rsc\shaders\shadows.inc" />
+    <None Include="..\..\rsc\shaders\stereo.inc" />
+    <None Include="..\..\rsc\shaders\utils.inc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="sasMaths.vcxproj">
+      <Project>{34831360-BCDB-11E0-962B-F8F9F0FCFAF3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="sasSystem.vcxproj">
+      <Project>{34831360-BCDB-11E0-962B-6689668C9A43}</Project>
+    </ProjectReference>
+    <ProjectReference Include="sasUtils.vcxproj">
+      <Project>{34831360-BCDB-11E0-962B-0809668C9A43}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

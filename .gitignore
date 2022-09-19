@@ -1,0 +1,7 @@
+
+build/vs2015/obj/Debug/
+*.tlog
+*.obj
+*.pch
+*.log
+*.pdb

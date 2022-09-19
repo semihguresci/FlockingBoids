@@ -1,0 +1,186 @@
+﻿'viewer.exe' (Win32): Loaded 'E:\Projects\FlockingBoidEntt\sasBoidsTest\bin\vs2015\viewer.exe'. Symbols loaded.
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ntdll.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kernel32.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\KernelBase.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\setupapi.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcrt.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cfgmgr32.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ucrtbase.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\rpcrt4.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\bcrypt.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ws2_32.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\user32.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\win32u.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\gdi32.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\gdi32full.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcp_win.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\advapi32.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\sechost.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\shell32.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\XInput1_4.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\combase.dll'. 
+'viewer.exe' (Win32): Loaded 'E:\Projects\FlockingBoidEntt\sasBoidsTest\bin\vs2015\sasSystem.dll'. Symbols loaded.
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcp140.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcp140_atomic_wait.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\dbghelp.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\opengl32.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\d3d9.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\vcruntime140.dll'. 
+'viewer.exe' (Win32): Loaded 'E:\Projects\FlockingBoidEntt\sasBoidsTest\bin\vs2015\AntTweakBar.dll'. Module was built without symbols.
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\winmm.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\d3d11.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\D3DCompiler_47.dll'. 
+'viewer.exe' (Win32): Loaded 'E:\Projects\FlockingBoidEntt\sasBoidsTest\bin\vs2015\assimp.dll'. Module was built without symbols.
+'viewer.exe' (Win32): Loaded 'E:\Projects\FlockingBoidEntt\sasBoidsTest\bin\vs2015\DevIL.dll'. 
+'viewer.exe' (Win32): Loaded 'E:\Projects\FlockingBoidEntt\sasBoidsTest\bin\vs2015\nvtt.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\devobj.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\glu32.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kernel.appcore.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\dwmapi.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\windows.storage.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\dxgi.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cryptsp.dll'. 
+'viewer.exe' (Win32): Loaded 'E:\Projects\FlockingBoidEntt\sasBoidsTest\bin\vs2015\zlib1.dll'. 
+'viewer.exe' (Win32): Loaded 'E:\Projects\FlockingBoidEntt\sasBoidsTest\bin\vs2015\libpng12.dll'. Module was built without symbols.
+'viewer.exe' (Win32): Loaded 'E:\Projects\FlockingBoidEntt\sasBoidsTest\bin\vs2015\jpeg62.dll'. Module was built without symbols.
+'viewer.exe' (Win32): Loaded 'E:\Projects\FlockingBoidEntt\sasBoidsTest\bin\vs2015\libtiff3.dll'. Module was built without symbols.
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ole32.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\wldp.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cryptbase.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\imm32.dll'. 
+The thread 0x74fc has exited with code 0 (0x0).
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\InputHost.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\SHCore.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\CoreMessaging.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\oleaut32.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\propsys.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\WinTypes.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\CoreUIComponents.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\bcryptprimitives.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ntmarta.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\uxtheme.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msctf.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\TextInputFramework.dll'. 
+sasScratchMemoryMng: allocated 16777088, max block size: 8388608
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\mswsock.dll'. 
+Oculus Rift not detected.
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ResourcePolicyClient.dll'. 
+'viewer.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\ResourcePolicyClient.dll'
+'viewer.exe' (Win32): Loaded 'C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_c0e159863e7afdde\nvldumd.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\version.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msasn1.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cryptnet.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\crypt32.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\drvstore.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\wintrust.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\imagehlp.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\rsaenh.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_c0e159863e7afdde\nvwgf2um.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_c0e159863e7afdde\NvCamera\NvCameraAllowlisting32.dll'. 
+'viewer.exe' (Win32): Unloaded 'C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_c0e159863e7afdde\NvCamera\NvCameraAllowlisting32.dll'
+The thread 0x6214 has exited with code 0 (0x0).
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\shlwapi.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\nvspcap.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\profapi.dll'. 
+'viewer.exe' (Win32): Loaded 'C:\Windows\SysWOW64\DXCore.dll'. 
+RTPool: creating new depth buffer. 711007676
+RTPool: creating new depth buffer. 711007676
+RTPool: creating new depth buffer. 711007676
+RTPool: creating new render target. -700809656
+RTPool: creating new render target. 188791762
+RTPool: creating new render target. 188791762
+RTPool: creating new render target. 360864153
+RTPool: creating new render target. 360864153
+RTPool: creating new render target. 687881106
+RTPool: creating new render target. -694442418
+RTPool: creating new render target. -1034193847
+RTPool: creating new render target. -1034193847
+RTPool: creating new render target. 791849535
+RTPool: creating new render target. 643134473
+E:\Projects\FlockingBoidEntt\sasBoidsTest\rsc\shaders\godrays.fx(103,32-59): warning X3206: 'distance': implicit truncation of vector type
+E:\Projects\FlockingBoidEntt\sasBoidsTest\rsc\shaders\godrays.fx(103,32-59): warning X3206: 'distance': implicit truncation of vector type
+RTPool: creating new render target. -1034193847
+RTPool: creating new render target. -1034193847
+RTPool: creating new render target. 360864153
+The thread 0x1958 has exited with code 0 (0x0).
+The thread 0x64b4 has exited with code 0 (0x0).
+The thread 0x5e94 has exited with code 0 (0x0).
+The thread 0x4c0c has exited with code 0 (0x0).
+The thread 0x52cc has exited with code 0 (0x0).
+The thread 0x2430 has exited with code 0 (0x0).
+The thread 0x2f64 has exited with code 0 (0x0).
+The thread 0x50d4 has exited with code 0 (0x0).
+The thread 0x44e4 has exited with code 0 (0x0).
+The thread 0x1b84 has exited with code 0 (0x0).
+The thread 0x22fc has exited with code 0 (0x0).
+The thread 0x75e4 has exited with code 0 (0x0).
+The thread 0x773c has exited with code 0 (0x0).
+The thread 0x6a88 has exited with code 0 (0x0).
+The thread 0x1d88 has exited with code 0 (0x0).
+The thread 0x1e00 has exited with code 0 (0x0).
+The thread 0x62e8 has exited with code 0 (0x0).
+The thread 0x4d04 has exited with code 0 (0x0).
+The thread 0x6168 has exited with code 0 (0x0).
+The thread 0x5640 has exited with code 0 (0x0).
+The thread 0xfe0 has exited with code 0 (0x0).
+The thread 0x5360 has exited with code 0 (0x0).
+The thread 0x4ddc has exited with code 0 (0x0).
+The thread 0x21e4 has exited with code 0 (0x0).
+The thread 0x5e00 has exited with code 0 (0x0).
+The thread 0x7774 has exited with code 0 (0x0).
+The thread 0x6054 has exited with code 0 (0x0).
+The thread 0x481c has exited with code 0 (0x0).
+The thread 0x5888 has exited with code 0 (0x0).
+The thread 0x73ec has exited with code 0 (0x0).
+The thread 0x6cf0 has exited with code 0 (0x0).
+The thread 0x6bf8 has exited with code 0 (0x0).
+The thread 0x71f4 has exited with code 0 (0x0).
+The thread 0x6e00 has exited with code 0 (0x0).
+The thread 0x75e0 has exited with code 0 (0x0).
+The thread 0x4738 has exited with code 0 (0x0).
+The thread 0x6a18 has exited with code 0 (0x0).
+The thread 0x6ad8 has exited with code 0 (0x0).
+The thread 0x6864 has exited with code 0 (0x0).
+The thread 0x6df4 has exited with code 0 (0x0).
+The thread 0x5670 has exited with code 0 (0x0).
+The thread 0x774c has exited with code 0 (0x0).
+The thread 0x66d4 has exited with code 0 (0x0).
+The thread 0x1918 has exited with code 0 (0x0).
+The thread 0x4788 has exited with code 0 (0x0).
+The thread 0x755c has exited with code 0 (0x0).
+The thread 0x6304 has exited with code 0 (0x0).
+The thread 0x1ae8 has exited with code 0 (0x0).
+The thread 0x2858 has exited with code 0 (0x0).
+The thread 0x6240 has exited with code 0 (0x0).
+The thread 0x403c has exited with code 0 (0x0).
+The thread 0x1120 has exited with code 0 (0x0).
+The thread 0x47bc has exited with code 0 (0x0).
+The thread 0x64b8 has exited with code 0 (0x0).
+The thread 0x6d68 has exited with code 0 (0x0).
+The thread 0x4064 has exited with code 0 (0x0).
+The thread 0x7078 has exited with code 0 (0x0).
+The thread 0x54b0 has exited with code 0 (0x0).
+The thread 0x69c0 has exited with code 0 (0x0).
+The thread 0x1094 has exited with code 0 (0x0).
+The thread 0x4904 has exited with code 0 (0x0).
+The thread 0x2e64 has exited with code 0 (0x0).
+The thread 0x5bf4 has exited with code 0 (0x0).
+The thread 0x6eb4 has exited with code 0 (0x0).
+The thread 0x5df8 has exited with code 0 (0x0).
+The thread 0x5998 has exited with code 0 (0x0).
+The thread 0x66e0 has exited with code 0 (0x0).
+The thread 0x6b48 has exited with code 0 (0x0).
+The thread 0x2834 has exited with code 0 (0x0).
+The thread 0x3754 has exited with code 0 (0x0).
+The thread 0x6fcc has exited with code 0 (0x0).
+The thread 0x5cc0 has exited with code 0 (0x0).
+The thread 0x1298 has exited with code 0 (0x0).
+The thread 0x760c has exited with code 0 (0x0).
+The thread 0x6138 has exited with code 0 (0x0).
+The thread 0x6480 has exited with code 0 (0x0).
+The thread 0x7314 has exited with code 0 (0x0).
+The thread 0x7404 has exited with code 0 (0x0).
+The thread 0x5eec has exited with code 0 (0x0).
+The thread 0x71dc has exited with code 0 (0x0).
+The thread 0x3e6c has exited with code 0 (0x0).
+The program '[30360] viewer.exe' has exited with code 0 (0x0).

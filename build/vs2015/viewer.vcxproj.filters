@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="viewer">
+      <UniqueIdentifier>{D735C522-C3D7-EFF8-AC92-034D98D37649}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="viewer\src">
+      <UniqueIdentifier>{7BB4BECB-676C-0019-D073-D974BC4A9B09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="viewer\src\sG">
+      <UniqueIdentifier>{113DF77D-7DFD-72B4-4638-BC31B2B7B790}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="viewer\src\sG\input">
+      <UniqueIdentifier>{3DEA9376-A94B-7184-32B9-B7369E19A843}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="viewer\src\sG\entt">
+      <UniqueIdentifier>{1809a74a-36ef-42b5-993e-18e59f5c3ade}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="viewer\src\sG\comp">
+      <UniqueIdentifier>{89cf19fa-76dc-4914-9517-60ab07a1f082}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="viewer\src\sG\sys">
+      <UniqueIdentifier>{20177b00-c1c8-434c-b19b-00c3f9e78071}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\viewer\src\sG\sg_boid.h">
+      <Filter>viewer\src\sG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\viewer\src\sG\sg_boidMng.h">
+      <Filter>viewer\src\sG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\viewer\src\sG\sg_cameraMng.h">
+      <Filter>viewer\src\sG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\viewer\src\sG\sg_gameMng.h">
+      <Filter>viewer\src\sG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\viewer\src\sG\sg_pch.h">
+      <Filter>viewer\src\sG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\viewer\src\sG\input\sg_controllerinputmng.h">
+      <Filter>viewer\src\sG\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\viewer\src\sG\input\sg_inputmng.h">
+      <Filter>viewer\src\sG\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\viewer\src\sG\input\sg_ovrinputmng.h">
+      <Filter>viewer\src\sG\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\viewer\src\sG\entt\entt.hpp">
+      <Filter>viewer\src\sG\entt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\viewer\src\sG\comp\sg_moveCmp.h">
+      <Filter>viewer\src\sG\comp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\viewer\src\sG\sys\sg_VelocitySystem.h">
+      <Filter>viewer\src\sG\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\viewer\src\sG\comp\kdtree.h">
+      <Filter>viewer\src\sG\comp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\viewer\src\main.cpp">
+      <Filter>viewer\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\viewer\src\sG\sg_boid.cpp">
+      <Filter>viewer\src\sG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\viewer\src\sG\sg_boidMng.cpp">
+      <Filter>viewer\src\sG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\viewer\src\sG\sg_cameraMng.cpp">
+      <Filter>viewer\src\sG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\viewer\src\sG\sg_gameMng.cpp">
+      <Filter>viewer\src\sG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\viewer\src\sG\sg_pch.cpp">
+      <Filter>viewer\src\sG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\viewer\src\sG\input\sg_controllerinputmng.cpp">
+      <Filter>viewer\src\sG\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\viewer\src\sG\input\sg_inputmng.cpp">
+      <Filter>viewer\src\sG\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\viewer\src\sG\input\sg_ovrinputmng.cpp">
+      <Filter>viewer\src\sG\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\viewer\src\sG\comp\sg_moveCmp.cpp">
+      <Filter>viewer\src\sG\comp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\viewer\src\sG\sys\sg_VelocitySystem.cpp">
+      <Filter>viewer\src\sG\sys</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
