@@ -6,16 +6,13 @@
 #include <stdexcept>
 #include <algorithm>
 
-namespace ecsKDTree 
+namespace KDTree 
 {
-	
 	struct KdNode
 	{
 		entt::entity id;
 		smVec3 point;
 	};
-
-
 
 	struct nn4heap 
 	{
@@ -27,7 +24,7 @@ namespace ecsKDTree
 			distance = d;
 		}
 	};
-
+	
 	struct compare_nn4heap 
 	{
 		bool operator()(const nn4heap& n, const nn4heap& m) 
@@ -35,7 +32,7 @@ namespace ecsKDTree
 			return (n.distance < m.distance);
 		}
 	};
-
+	
 	struct DistanceMeasure {
 	public:
 		DistanceMeasure() {}
@@ -70,7 +67,6 @@ namespace ecsKDTree
 		}
 		size_t d;
 	};
-
 
 	struct kdtree_node {
 	public:
@@ -271,7 +267,5 @@ namespace ecsKDTree
 		}
 
 	};
-
-
 
 }

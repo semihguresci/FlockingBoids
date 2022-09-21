@@ -2,10 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\Semih\Desktop\Boids\ImprovedBoidsTest\bin\vs2015\sasSystem.dll</FullPath>
+      <FullPath>D:\FlockingBoids\FlockingBoids\bin\vs2015\sasSystem.dll</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\Semih\Desktop\Boids\ImprovedBoidsTest\bin\vs2015\viewer.exe</FullPath>
+      <FullPath>D:\FlockingBoids\FlockingBoids\bin\vs2015\viewer.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

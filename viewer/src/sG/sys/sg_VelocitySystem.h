@@ -7,6 +7,7 @@
 #include "threading/sas_thread.h"
 #include "threading/sas_semaphore.h"
 #include "threading/sas_atomic.h"
+#include <chrono>
 
 namespace ecsBoid
 {
@@ -15,11 +16,14 @@ namespace ecsBoid
 	/// </summary>
 	class sg_VelocitySystem : public sasSingleton< sg_VelocitySystem >
 	{
-
 	private :
+		// min dist between flocks
 		const float epsilon = 0.05f;
+		// ECS Registery
 		const std::shared_ptr<entt::registry> m_registery;
-		std::unique_ptr<ecsKDTree::KdTree> m_tree;
+		// KD Tree
+		std::unique_ptr<KDTree::KdTree> m_tree;
+
 		const smVec3 _worldMin;
 		const smVec3 _worldMax;
 		smVec3 _edgeNormals[6] = 
@@ -31,14 +35,21 @@ namespace ecsBoid
 						smVec3(0.f, 0.f, -1.f) };
 
 		 smVec3 _edgePoint[6];
-		 std::vector<ecsKDTree::KdNode>  nodes;
+		 // KD Tree Nores
+		 std::vector<KDTree::KdNode>  nodes;
 
 		 //PhysicsThreadData data;
 		 //sasThread _KDThread;
+		 bool usePhysicsUpdate = true;
+		 std::chrono::high_resolution_clock::time_point physicsUpdateTime; // = std::chrono::high_resolution_clock::now();
+		 std::chrono::milliseconds PhysicsUpdate {30};
 	public:
+		// Update Flock
 		sg_VelocitySystem(const std::shared_ptr<entt::registry> m_reg, const smVec3 worldMin, const smVec3 worldMax);
+
 		void UpdateMovement(const float dt);
 		void ConstructSceneKDTree();
+
 	
 	};
 }

@@ -5,3 +5,5 @@ build/vs2015/obj/Debug/
 *.pch
 *.log
 *.pdb
+.vs/
+*.recipe

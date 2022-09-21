@@ -4,7 +4,7 @@
 #include <execution>
 #include <platform/win32/sas_pl_timer.h>
 
-using namespace ecsKDTree;
+using namespace KDTree;
 
 ecsBoid::sg_VelocitySystem::sg_VelocitySystem(const std::shared_ptr<entt::registry> m_reg, const smVec3 worldMin, const smVec3 worldMax) : m_registery(m_reg), _worldMin(worldMin), _worldMax(worldMax)
 {
@@ -22,7 +22,7 @@ void ecsBoid::sg_VelocitySystem::UpdateMovement(float dt)
 	const float *epsl = &epsilon;
 	smVec3* edgeNormals = _edgeNormals;
 	smVec3 *edgePoint = _edgePoint;
-	ecsKDTree::KdTree* kdtreeptr = m_tree.get();
+	KDTree::KdTree* kdtreeptr = m_tree.get();
 	smVec3 worldMin (_worldMin);
 	smVec3 worldMax (_worldMax);
 	entt::basic_view view = m_registery->view<transformComponent, movementComponent , boidComponent>();
@@ -197,12 +197,18 @@ void ecsBoid::sg_VelocitySystem::UpdateMovement(float dt)
 		m_transform._pos = calcpos;
 		
 		});
-
 }
 
 void ecsBoid::sg_VelocitySystem::ConstructSceneKDTree()
 {
-	
+	if(usePhysicsUpdate)
+	{
+		auto now = std::chrono::high_resolution_clock::now();
+		auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(now - physicsUpdateTime);
+		if (duration < PhysicsUpdate)
+			return;
+		physicsUpdateTime = now;
+	}
 	std::vector<KdNode>* nds = &nodes;
 	auto group = m_registery->view<ecsBoid::transformComponent>();
 	if (group.size() != nds->size())

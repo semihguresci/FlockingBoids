@@ -19,9 +19,8 @@ sgBoidMng::sgBoidMng( uint32_t smallBoidCount, uint32_t largeBoidCount )
     _boidCount[ sgBoidType::small ] = smallBoidCount;
     _boidCount[ sgBoidType::big ] = largeBoidCount;
     
-
-
-    ecsBoid::BoidSettings small = {
+    ecsBoid::BoidSettings small =
+    {
         ._radius = 0.2f,
         ._proximityTestRange = 5.f,
         ._boidVelocity = 8.f,
@@ -127,8 +126,7 @@ void sgBoidMng::flushRenderCommands()
             *largeBoidRenderData = smVec4(transform._pos.X, transform._pos.Y, transform._pos.Z, b._radius);
             largeBoidRenderData++;
         }
-    }
-   
+    }  
 }
 
 void sgBoidMng::syncWindowStep()
